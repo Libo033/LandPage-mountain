@@ -17,8 +17,8 @@ const ContentSection = ({
   objectPosition,
 }: Readonly<ContentSectProps>) => {
   return (
-    <section className="bg-[#0b1d26] relative px-6 pb-52 pt-10">
-      <div className="w-full h-80 flex">
+    <section className="bg-[#0b1d26] max-w-[660px] mx-auto relative px-6 pb-52 pt-10 sm:px-14">
+      <div className="w-full aspect-content-image flex">
         <Image
           className={`object-cover ${objectPosition} z-20`}
           src={image}
@@ -37,7 +37,7 @@ const ContentSection = ({
         </div>
         <p
           style={lora.style}
-          className="mt-4 text-white text-pretty text-4xl font-medium"
+          className="mt-4 text-white text-pretty text-4xl font-medium sm:text-[45px]"
         >
           {title}
         </p>
@@ -55,7 +55,7 @@ const ContentSection = ({
           height={30}
         />
       </div>
-      <p className="absolute text-white opacity-10 text-[9rem] font-extrabold left-[-30px] bottom-[450px] z-10">
+      <p className="absolute text-white opacity-10 text-[9rem] font-extrabold left-[-30px] bottom-[450px] sm:bottom-[410px] z-10">
         {number}
       </p>
     </section>
