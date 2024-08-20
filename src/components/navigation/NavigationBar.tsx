@@ -14,19 +14,19 @@ const NavigationBar = () => {
         <div>
           <span
             style={lora.style}
-            className="text-3xl font-semibold md:text-4xl"
+            className="text-3xl text-white font-semibold md:text-4xl"
           >
             MNTN
           </span>
         </div>
         <ul className="hidden md:w-2/3 md:flex md:items-center md:justify-center">
-          <li className="text-sm font-extrabold px-6 py-2 cursor-pointer">
+          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer">
             Equipment
           </li>
-          <li className="text-sm font-extrabold px-6 py-2 cursor-pointer">
+          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer">
             About us
           </li>
-          <li className="text-sm font-extrabold px-6 py-2 cursor-pointer">
+          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer">
             Blog
           </li>
         </ul>
@@ -38,7 +38,7 @@ const NavigationBar = () => {
             width={30}
             height={30}
           />
-          <p className="text-sm font-extrabold">Account</p>
+          <p className="text-sm text-white font-extrabold">Account</p>
         </div>
       </nav>
     </div>
