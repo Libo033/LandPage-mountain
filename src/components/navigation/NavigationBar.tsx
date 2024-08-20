@@ -20,17 +20,17 @@ const NavigationBar = () => {
           </span>
         </div>
         <ul className="hidden md:w-2/3 md:flex md:items-center md:justify-center">
-          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer">
+          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer duration-200 hover:text-[#fbd784] hover:translate-y-[-2px]">
             Equipment
           </li>
-          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer">
+          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer duration-200 hover:text-[#fbd784] hover:translate-y-[-2px]">
             About us
           </li>
-          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer">
+          <li className="text-sm text-white font-extrabold px-6 py-2 cursor-pointer duration-200 hover:text-[#fbd784] hover:translate-y-[-2px]">
             Blog
           </li>
         </ul>
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-1 cursor-pointer">
           <Image
             className="w-[24px]"
             src={"/img/account.svg"}
