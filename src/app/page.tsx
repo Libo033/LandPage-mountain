@@ -1,11 +1,22 @@
 import Footer from "@/components/navigation/Footer";
 import NavigationBar from "@/components/navigation/NavigationBar";
 import ContentSection from "@/components/others/ContentSection";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
       <NavigationBar />
+      <div className="relative">
+        <Image
+          className="w-screen h-[115vh] -z-10 object-cover object-center"
+          src={"/img/main.jpg"}
+          alt="mountain"
+          width={2560}
+          height={1080}
+        />
+        <span className="absolute w-full h-80 bg-transparent bottom-0 bg-gradient-to-t from-[#0b1d26] to-transparent bottom-gradient"></span>
+      </div>
       <ContentSection
         tagline={"get started"}
         title={"What level of hiker are you?"}
