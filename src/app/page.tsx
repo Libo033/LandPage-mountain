@@ -1,7 +1,13 @@
 import Footer from "@/components/navigation/Footer";
 import NavigationBar from "@/components/navigation/NavigationBar";
 import ContentSection from "@/components/others/ContentSection";
+import { Lora } from "next/font/google";
 import Image from "next/image";
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export default function Home() {
   return (
@@ -16,6 +22,23 @@ export default function Home() {
           height={1080}
         />
         <span className="absolute w-full h-80 bg-transparent bottom-0 bg-gradient-to-t from-[#0b1d26] to-transparent bottom-gradient"></span>
+        <div className="absolute flex flex-col items-center bg-transparent z-20 w-full bottom-[50%]">
+          <div className="w-full px-12 inline-flex justify-start items-center bg-transparent md:px-16 lg:px-32 lg:w-9/12">
+            <span className="bg-transparent border border-[#fbd784] w-12"></span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <p className="text-[#fbd784] bg-transparent text-xs font-bold uppercase tracking-[0.3rem] lg:text-base">
+              a hiking guide
+            </p>
+          </div>
+          <div className="bg-transparent">
+            <p
+              style={lora.style}
+              className="bg-transparent text-white text-[2.4rem] font-medium px-12 md:text-[3rem] md:px-16 lg:px-40 lg:text-[3.7rem] lg:w-9/12 xl:text-[4rem]"
+            >
+              Be prepared for the Mountains and beyond!
+            </p>
+          </div>
+        </div>
       </div>
       <ContentSection
         tagline={"get started"}
